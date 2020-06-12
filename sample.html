@@ -3,4 +3,6 @@ layout: default
 title: Sample Story
 permalink: /sample
 ---
-<p>Test sentence with a fill in the <span class="input" data-placeholder="noun"></span>. Wouldn't you like to <span class="input" data-placeholder="verb"></span> it out?</p>
+<p>Test sentence with a fill in the {{ 'noun' | mad_lib }}. Wouldn't you like to {{ 'verb' | mad_lib }} it out?</p>
+
+<p>As {{ 'person in room' | mad_lib }} once said, "{{ 'famous saying' | mad_lib}}" </p>
