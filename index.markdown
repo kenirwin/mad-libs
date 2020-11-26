@@ -8,6 +8,6 @@ title: Betsy and Ken's Mad Libs
 <div class="container">
 <ul style="none">
 {% for page in site.pages %}
-<li><a href="{{page.permalink}}">{{page.title}}</a></li>
+<li><a href="./{{page.permalink}}">{{page.title}}</a></li>
 {% endfor %}
 </ul>
