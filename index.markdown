@@ -9,7 +9,7 @@ index: false
 <div class="container">
 <ul style="none">
 {% for page in site.pages %}
-{% if page.index !== false %}
+{% if page.index != false %}
 <li><a href=".{{page.permalink}}">{{page.title}}</a></li>
 {% endif %}
 {% endfor %}
