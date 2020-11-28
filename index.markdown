@@ -10,7 +10,10 @@ index: false
 <ul style="none">
 {% for page in site.pages %}
 {% if page.index != false %}
+{% assign len = page.title | size %}
+{% if len > 0 %}
 <li><a href=".{{page.permalink}}">{{page.title}}</a></li>
+{% endif %}
 {% endif %}
 {% endfor %}
 </ul>
