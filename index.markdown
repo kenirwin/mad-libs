@@ -4,10 +4,13 @@
 
 layout: home
 title: Betsy and Ken's Mad Libs
+index: false
 ---
 <div class="container">
 <ul style="none">
 {% for page in site.pages %}
-<li><a href="./{{page.permalink}}">{{page.title}}</a></li>
+{% if page.index !== false %}
+<li><a href=".{{page.permalink}}">{{page.title}}</a></li>
+{% endif %}
 {% endfor %}
 </ul>
