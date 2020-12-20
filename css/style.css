@@ -1,3 +1,4 @@
 #main-form input { display: block }
 #mad-lib { display: none }
 #revise { display: block }
+::placeholder { text-transform: lowercase }
